@@ -8,7 +8,7 @@ const MONGODB_USERNAME= process.env.MONGODB_USERNAME || "";
 const MONGODB_PASSWORD= process.env.MONGODB_PASSWORD || "";
 const MONGODB_URL= `mongodb+srv://${MONGODB_USERNAME}:${MONGODB_PASSWORD}@backend.gpskaf7.mongodb.net/?retryWrites=true&w=majority`;
 
-export const config = {
+const serverConfig = {
     mongo: {
         url: MONGODB_URL
     },
@@ -16,3 +16,4 @@ export const config = {
         port: SERVER_PORT
     }
 }
+export default serverConfig
