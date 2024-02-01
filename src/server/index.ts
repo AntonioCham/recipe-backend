@@ -1,7 +1,7 @@
 import express from "express";
 import mongoose from "mongoose";
 import serverConfig from "../config/config";
-import recipeRoute from "../routes/recipeRoute"
+import recipeRoute from "../routes/recipeRoute";
 import swaggerUi from "swagger-ui-express";
 
 const app = express();
